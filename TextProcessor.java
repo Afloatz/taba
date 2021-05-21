@@ -47,11 +47,13 @@ public class TextProcessor {
                 sb.append(c);
             }
 
+            // check if the current character is not a vowel to count the number of characters in the text excluding vowels
             if (!(c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U')){
                 counter++;
             }
         }
 
+        // add at the end of the encoded text the number of characters in the initial text excluding the number of vowels (including the number of spaces).
         sb.append(counter);
 
         // convert the StringBuffer instance to a String instance, and save it in the instance variable encodedText
