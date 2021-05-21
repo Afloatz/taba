@@ -75,6 +75,7 @@ public class TextProcessor {
         // First calculate the size of the longest word in the array
         // store the size of the first element of the array in the max variable
 		int maxLength = words[0].length();
+        // traverse the array starting from the 2dnd element since we already store the 1st element
 		for (int i = 1; i < words.length; i++ ){
             // store the size of the current element of the array
             int wordLength = words[i].length();
@@ -84,7 +85,7 @@ public class TextProcessor {
 		}
 
         int index = 0;
-        for (int i = 1; i < words.length; i++ ){
+        for (int i = 0; i < words.length; i++ ){
             /* check if the word is among the longuests, and if so,
                 add the current word element to the longestWords array 
                 at index given by value of the variable index
