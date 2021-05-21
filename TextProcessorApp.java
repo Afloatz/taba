@@ -4,12 +4,12 @@ QUESTION 1
 		-- prompts the users the number of paragraph they want to enter
 		-- prompts the user to input texts
 		-- uses the instantiable class TextProcessor to perform the actual encoding of the texts
-		-- retrieves the encoded texts and dipslays them
+		-- retrieves the encoded texts and displays them
 QUESTION 2
-		-- prompts the users the number of wordsh they want to enter
+		-- prompts the users the number of words they want to enter
 		-- prompts the user to input words
 		-- uses the instantiable class TextProcessor to find the longest words
-		-- retrieves the longest words and dipslays them		
+		-- retrieves the longest words and displays them		
 
 @author Florent Laot
 */
@@ -29,7 +29,7 @@ public class TextProcessorApp {
 
         // input
 		// prompt the user for the number of paragraphs
-		System.out.println("enter the number of paragraghs you want to encode:");
+		System.out.println("enter the number of paragraphs you want to encode:");
 		int n = input.nextInt();
 
 		TextProcessor encoder = new TextProcessor();
@@ -37,7 +37,7 @@ public class TextProcessorApp {
 		// next, we use a loop statement because the users can enter as many paragraph as they want, namely the number of paragraphs stored above in the n variable
 		for (int i = 0; i < n; i++){	
 			// prompt the user to provide a paragraph
-			System.out.println("enter a paragragh: ");
+			System.out.println("enter a paragraph: ");
 			input = new Scanner(System.in);
 			myText = input.nextLine();
 			// use the setter method to store the user's text into the object's instance variable text

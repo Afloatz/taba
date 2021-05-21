@@ -18,7 +18,7 @@ public class TextProcessor {
         text = ""; // initialize the text with the empty string, otherwise the text instance variable is initialized with null
     }
 
-    // setter method to assign a value to the intance variable text
+    // setter method to assign a value to the instance variable text
     public void setText(String text) {
         this.text = text;
     }
@@ -97,9 +97,6 @@ public class TextProcessor {
                 index++;
             }
         }
-
         return longestWords;
-        
     }
-
 }
