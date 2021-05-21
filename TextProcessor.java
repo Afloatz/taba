@@ -57,7 +57,45 @@ public class TextProcessor {
         sb.append(counter);
 
         // convert the StringBuffer instance to a String instance, and save it in the instance variable encodedText
-        encodedText = sb.toString();
+        encodedText = sb.toString(); 
+    }
+
+    public String[] findLongestWords(String[] words) {
+
+        /* create a one dimensional array to store the longest words;
+			the array is created with the same size as the size of
+			the words array;
+			there can be up to words.length of longest words -- that
+			corresponds to the scenario when all the words are of same length
+			AND
+			store the reference to the array in the instance variable longestWords
+		*/
+        String[] longestWords = new String[words.length];
+
+        // First calculate the size of the longest word in the array
+        // store the size of the first element of the array in the max variable
+		int maxLength = words[0].length();
+		for (int i = 1; i < words.length; i++ ){
+            // store the size of the current element of the array
+            int wordLength = words[i].length();
+			if ( wordLength > maxLength){ 
+				maxLength = wordLength;
+			}
+		}
+
+        int index = 0;
+        for (int i = 1; i < words.length; i++ ){
+            /* check if the word is among the longuests, and if so,
+                add the current word element to the longestWords array 
+                at index given by value of the variable index
+            */
+            if (words[i].length() == maxLength){
+                longestWords[index] = words[i];
+                index++;
+            }
+        }
+
+        return longestWords;
         
     }
 

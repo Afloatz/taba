@@ -1,8 +1,9 @@
 /**
 TextProcessorApp is an application which performs the following tasks
+		-- prompts the user the number of paragraph they want to enter
 		-- prompts the user to input a text
-		-- uses the instantiable class TextProcessor to perform the actual translation of a word from english to Pig Latin
-		-- retrieves the word in PigLatin and dipslays it
+		-- uses the instantiable class TextProcessor to perform the actual encoding of the text
+		-- retrieves the encoded text and dipslays it
 
 @author Florent Laot
 */
