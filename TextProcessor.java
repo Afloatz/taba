@@ -29,6 +29,7 @@ public class TextProcessor {
     // declare the processing/ compute method -- encode a given text to a new text using ER2 encoding rule
     public void encodeText() {
         
+        int counter = 0;
         StringBuffer sb = new StringBuffer();
 
         // traverse the entire text
@@ -45,7 +46,13 @@ public class TextProcessor {
                 sb.append("LL");
                 sb.append(c);
             }
+
+            if (!(c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U')){
+                counter++;
+            }
         }
+
+        sb.append(counter);
 
         // convert the StringBuffer instance to a String instance, and save it in the instance variable encodedText
         encodedText = sb.toString();
