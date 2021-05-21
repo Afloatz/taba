@@ -1,9 +1,15 @@
 /**
 TextProcessorApp is an application which performs the following tasks
-		-- prompts the user the number of paragraph they want to enter
-		-- prompts the user to input a text
-		-- uses the instantiable class TextProcessor to perform the actual encoding of the text
-		-- retrieves the encoded text and dipslays it
+QUESTION 1
+		-- prompts the users the number of paragraph they want to enter
+		-- prompts the user to input texts
+		-- uses the instantiable class TextProcessor to perform the actual encoding of the texts
+		-- retrieves the encoded texts and dipslays them
+QUESTION 2
+		-- prompts the users the number of wordsh they want to enter
+		-- prompts the user to input words
+		-- uses the instantiable class TextProcessor to find the longest words
+		-- retrieves the longest words and dipslays them		
 
 @author Florent Laot
 */

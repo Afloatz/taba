@@ -1,7 +1,9 @@
 /**
-TextProcessor -- an instantiable class to encode a text using ER2 encoding rule
+TextProcessor -- an instantiable class 
+QUESTION 1 : encode a text using ER2 encoding rules
     -- Before each consonant add the first letter of your last name twice.
     -- The encoded text ends with the number of characters in the initial text excluding the number of vowels (including the number of spaces).
+QUESTION 2 : find the longest words in an array of words
 
  @author Florent Laot
 */
@@ -86,7 +88,7 @@ public class TextProcessor {
 
         int index = 0;
         for (int i = 0; i < words.length; i++ ){
-            /* check if the word is among the longuests, and if so,
+            /* check if the word is among the longests, and if so,
                 add the current word element to the longestWords array 
                 at index given by value of the variable index
             */
